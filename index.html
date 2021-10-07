@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./Images/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <div class="main">
+      <h2>Password Generator</h2>
+      <div class="display-password">
+        <span class="display" id="passwordDisplay"></span>
+        <img
+          src="./Images/clipboard.png"
+          class="clipboard"
+          id="clipboard"
+          alt="clipboard"
+        />
+      </div>
+      <div class="input-section">
+        <div class="flex-item">
+          <p>Password Length</p>
+          <input
+            value="10"
+            type="number"
+            placeholder="eg:-15"
+            id="passwordLengthElement"
+          />
+        </div>
+        <div class="flex-item">
+          <p>Numbers</p>
+          <input type="checkbox" name="numbers" id="numbersElement" />
+        </div>
+        <div class="flex-item">
+          <p>Lowercase</p>
+          <input
+            type="checkbox"
+            checked
+            name="lowercase"
+            id="lowercaseElement"
+          />
+        </div>
+        <div class="flex-item">
+          <p>Uppercase</p>
+          <input type="checkbox" name="uppercase" id="uppercaseElement" />
+        </div>
+        <div class="flex-item">
+          <p>Characters</p>
+          <input type="checkbox" name="characters" id="charactersElement" />
+        </div>
+      </div>
+
+      <div class="messageSection">
+        <p class="msg hide" id="msg"></p>
+      </div>
+      <button class="btn" id="generateBtn">Generate</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
