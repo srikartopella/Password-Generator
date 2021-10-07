@@ -282,10 +282,5 @@ h2 {
   .display-password {
     text-align: center;
     font-size: 1.1rem;
-    flex-direction: column;
-  }
-
-  .flex-item {
-    flex-direction: column;
   }
 }
