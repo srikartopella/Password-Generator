@@ -89,7 +89,7 @@ async function copyText(text) {
       showMessage("Error!, Please try again after 5 seconds", "error");
     }
   } else {
-    showMessage("No Password to copy, Try generate button");
+    showMessage("No Password to copy, Try generate button", "error");
   }
 }
 
